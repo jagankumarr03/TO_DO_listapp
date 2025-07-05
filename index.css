@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2, #fc6767);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.container {
+    
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 45px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+}
+.container h1 {
+    color: #ccdc9c;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 28px;
+
+}
+.container button {
+    background-color: #764ba2;
+    color: rgb(11, 11, 11);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #fc6767;
+}
+.container input {
+    padding: 6px 15px;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    background-color: #ccdc9c;
+}
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#completedList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#completedList li {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.completed {
+  text-decoration: line-through;
+  color: lightgray;
+}
